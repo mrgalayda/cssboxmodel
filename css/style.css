@@ -1,0 +1,274 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* I stole this font code from bowtruss.com. Love their coffee!!! */
+/* side note, Hoefler Frere Jones please please just use type kit and let me use the fonts I PURCHASED! Love you! */
+
+@font-face {
+  font-family: 'GothamHTF-Book';
+  src: url("http://bowtruss.com/fonts/GothamHTF-Book.eot?#iefix") format("embedded-opentype"), url("http://bowtruss.com/fonts/GothamHTF-Book.ttf") format("truetype"), url("http://bowtruss.com/fonts/GothamHTF-Book.svg#GothamHTF-Book") format("svg"); }
+
+@font-face {
+  font-family: 'GothamHTF-Medium';
+  src: url("http://bowtruss.com/fonts/GothamHTF-Medium.eot?#iefix") format("embedded-opentype"), url("http://bowtruss.com/fonts/GothamHTF-Medium.ttf") format("truetype"), url("http://bowtruss.com/fonts/GothamHTF-Medium.svg#GothamHTF-Medium") format("svg"); }
+
+
+
+/* My Style */
+#wrapper * {
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+}
+#wrapper #share *{
+  -webkit-transition: all 0 ease;
+  -moz-transition: all 0 ease;
+  -ms-transition: all 0 ease;
+  -o-transition: all 0 ease;
+}
+body {
+	overflow:hidden; 		
+	padding:0;
+	margin:0;		
+	height:100%;
+	width:100%;
+  	font-family: 'GothamHTF-Book', Arial, sans-serif;
+	font-size: 13px;
+	line-height: 16px;
+	color: #333333;
+}
+a{
+	color: #333333;
+}
+#bgimg {
+	position:absolute;
+	z-index: -1;
+}
+
+#myBody{
+	position:absolute;
+	z-index: 5;				
+	overflow:auto; 			
+	height:100%;
+	width:100%;	
+	background: url('../img/raster-dark.png');
+}
+#wrapper{
+	max-width: 1200px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+#wrapper-inner{
+	float: left;
+	width: 270px;
+	padding: 70px 25px 30px 25px;
+}
+#header{
+	padding-bottom: 20px;
+}
+h1{
+	background: transparent url(../img/logo.png) top left no-repeat;
+	text-indent: -9999px;
+	width: 224px;
+	height: 167px;
+	display: block;
+}
+h2{
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 36px;
+	padding-bottom: 5px;
+	font-weight: bold;
+	clear: both;
+	display: block;
+  	font-family: 'GothamHTF-Medium', Arial, sans-serif;
+}
+h3{
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+  	font-family: 'GothamHTF-Medium', Arial, sans-serif;
+}
+p{
+	padding-bottom: 10px;
+}
+p.intro{
+	font-size: 13px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px dashed #999999;
+}
+p.description{
+	font-size: 13px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px dashed #999999;
+}
+p.terms{
+	font-size: 12px;
+	color: #666666;
+	line-height: 15px;
+}
+p.lil-extra{
+	font-size: 13px;
+  	font-family: 'GothamHTF-Medium', Arial, sans-serif;
+}
+p.signature{
+	font-style: italic;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px dashed #999999;
+}
+/* PayPal Form Styles */
+.sizes ul{
+
+}
+.sizes ul li{
+	float: left;
+}
+.sizes ul li span{
+	padding: 10px;
+	color: #ffffff;
+	background-color: #333333;
+  	font-family: 'GothamHTF-Medium', Arial, sans-serif;
+	font-size: 12px;
+	float: left;
+	display: block;	
+	min-width: 18px;
+	text-align: center;
+/*	border: 1px solid #ffffff; */
+	border-right: none;
+	margin-right: 1px;
+	line-height: 16px;
+
+}
+.sizes.variant ul li span{
+	min-width: 12px;
+	padding: 10px 6px;
+}
+.sizes ul li span.hover, .sizes ul li span:hover {
+	cursor: pointer;
+	background-color: #000000;
+	color: #00d2ff;
+	padding: 10px;
+/*	border: 1px solid #00d2ff; */
+	-moz-box-shadow: 0 0 5px #00d2ff;
+	-webkit-box-shadow: 0 0 5px #00d2ff;
+	box-shadow: 0 0 5px #00d2ff;
+}
+.sizes.variant ul li span.hover, .sizes.variant ul li span:hover  {
+	padding: 10px 6px;
+
+}
+.sizes ul li span{
+	text-align: center;
+}
+.sizes ul li span.selected{
+	background-color: #00d2ff;
+	color: #ffffff;
+}
+form .button{
+	background-color: #0695b4;
+	padding: 10px;
+	text-align: center;
+	min-width: 110px;
+	border: none;
+	font-size: 13px;
+	display: block;
+  	font-family: 'GothamHTF-Medium', Arial, sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	line-height: 16px;
+}
+form .button.hover, form .button:hover{
+	cursor: pointer;
+	-moz-box-shadow: 0 0 5px #00d2ff;
+	-webkit-box-shadow: 0 0 5px #00d2ff;
+	box-shadow: 0 0 5px #00d2ff;
+	background-color: #00d2ff;
+	
+}
+form .button.variant{
+	min-width: 100px;
+	padding: 10px 0;
+}
+#share h3{
+	padding-bottom: 4px;
+}
+.addthis_toolbox{
+
+}
+/* CSS HACKZ! */
+.transparent {
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(255, 255, 255);
+	/* RGBa with 0.6 opacity */
+	background: rgba(255, 255, 255, 0.9);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+div.thanks{
+	padding-top: 30px;
+}
+p.doejo{
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+	color: #999999;
+}
+p.doejo a{
+	text-decoration: none;
+	color: #999999;
+	font-style: italic;
+	font-weight: bold;
+}
+p.doejo a:hover{
+	text-decoration: none;
+	color: #333333;
+	
+}
+p em{
+  	font-family: 'GothamHTF-Medium', Arial, sans-serif;
+}
